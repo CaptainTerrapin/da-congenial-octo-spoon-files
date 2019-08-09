@@ -1,0 +1,38 @@
+public int bosshealth;
+private animation bossphase1;
+private animation bossphase2;
+private animation bossphase3;
+private animation bossphase4;
+private gameobject enemy1;
+private gameobject enemy2;
+private gameobject enemy3;
+private gameobject enemy4;
+public Transform barrelEnd;
+public Rigidbody rocketPrefab;
+
+void update ()
+{
+   if(bosshealth =< 300)
+      {
+          bossphase1 = true;
+          else bossphase1 = false;
+          Rigidbody rocketInstance;
+          rocketInstance = Instantiate(rocketPrefab, barrelEnd.position, barrelEnd.rotation) as Rigidbody;
+          threading.sleep(300)
+       {
+   if(bosshealth =< 200)
+      {
+          bossphase2 = true;
+          else bossphase2 = false;
+      } 
+   if(bosshealth =< 100)
+      {
+          bossphase3 = true;
+          else bossphase3 = false;
+      }
+   if(bosshealth =< 50)
+      {
+          bossphase4 = true;
+          else bossphase4 = false;
+      }
+}
